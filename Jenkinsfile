@@ -13,7 +13,7 @@ node {
 
         //app = docker.build("getintodevopssample1")
         /*app = docker.build("getintodevops/hellonode")*/
-        app=docker.build("kuldeepkumarsingh/new-repo:getintodevops")
+        app=docker.build("ankit0688/new-repo:getintodevops")
     }
 
     stage('Test image') {
