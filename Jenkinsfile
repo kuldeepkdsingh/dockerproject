@@ -33,7 +33,7 @@ node {
             app.push("latest")
         }*/
         docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-            def image = docker.build "https://registry.hub.docker.com/new-repo:${env.BUILD_TAG}"
+            def image = docker.build "https://registry.hub.docker.com/new-repo:${env.BUILD_NUMBER}"
             image.push()
             image.push('latest')
           }
